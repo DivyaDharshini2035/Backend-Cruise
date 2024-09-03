@@ -9,12 +9,12 @@ dotenv.config()
 
 
 const app=express()
-// app.use(cors({
-//     origin: ['https://frontend-cruise.vercel.app/' ],
-//     credentials:true
-// }));
+app.use(cors({
+    origin: ['https://frontend-cruise.vercel.app/' ],
+    credentials:true
+}));
 
-app.use(cors());
+// app.use(cors());
 app.use(express.json())
 app.use('/client',UserRouter)
 app.use('/api/explore',RoomsRouter)
