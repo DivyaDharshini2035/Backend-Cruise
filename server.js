@@ -9,6 +9,14 @@ dotenv.config()
 
 
 const app=express()
+app.use((req, res, next) => {
+    res.header('Access-Control-Allow-Origin', 'https://frontend-cruise.vercel.app');
+    res.header('Access-Control-Allow-Methods', 'GET,POST,PUT,DELETE');
+    res.header('Access-Control-Allow-Headers', 'Content-Type, Authorization');
+    next();
+});
+const cors = require('cors');
+// app.use(cors({ origin: 'https://frontend-cruise.vercel.app' }));
 app.use(cors({
     origin: ['https://frontend-cruise.vercel.app/' ],
     credentials:true
