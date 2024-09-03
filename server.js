@@ -15,7 +15,7 @@ app.use((req, res, next) => {
     res.header('Access-Control-Allow-Headers', 'Content-Type, Authorization');
     next();
 });
-const cors = require('cors');
+// const cors = require('cors');
 // app.use(cors({ origin: 'https://frontend-cruise.vercel.app' }));
 app.use(cors({
     origin: ['https://frontend-cruise.vercel.app/' ],
