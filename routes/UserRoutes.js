@@ -81,7 +81,7 @@ router.post('/forgotpassword', async (req, res) => {
             from: 'dcruise0253@gmail.com',
             to: email,
             subject: 'Reset Password',
-            text: `http://localhost:3005/resetpassword/${token}`
+            text: `https://frontend-cruise.vercel.app/resetpassword/${token}`
         };
 
         transporter.sendMail(mailOptions, function (error, info) {
