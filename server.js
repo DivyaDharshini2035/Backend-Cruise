@@ -10,7 +10,7 @@ dotenv.config()
 
 const app=express()
 app.use(cors({
-    origin: ['http://localhost:3005' ],
+    origin: ['https://frontend-cruise.vercel.app/' ],
     credentials:true
 }));
 app.use(express.json())
