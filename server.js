@@ -28,7 +28,7 @@ app.use('/client',UserRouter)
 app.use('/api/explore',RoomsRouter)
 
 
-mongoose.connect('mongodb+srv://Cruise:Cruise@cluster0.y4emazr.mongodb.net/')
+mongoose.connect('mongodb+srv://Cruise:Cruise@cluster0.y4emazr.mongodb.net/CruiseWebsite')
 
 
 
